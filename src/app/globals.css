@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* パステルカラー定義 */
+  --color-pastel-pink-200: #fbcfe8;
+  --color-pastel-purple-200: #e9d5ff;
+  --color-pastel-blue-200: #bfdbfe;
+  --color-pastel-purple-800: #6b21a8;
+  --color-pastel-purple-600: #9333ea;
+  --color-pastel-pink-400: #f472b6;
+  --color-pastel-purple-500: #a78bfa;
+  --color-pastel-yellow-500: #f59e0b;
+  --color-pastel-green-500: #22c55e;
+  --color-pastel-gray-800: #1f2937;
+  --color-pastel-gray-500: #6b7280;
+}
+
+/* ホーム画面の背景に直接スタイルを適用（優先度を強制的に上げる） */
+body main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, var(--color-pastel-pink-200), var(--color-pastel-purple-200), var(--color-pastel-blue-200)) !important;
+}
+
+/* ヘッダーのタイトルに直接スタイルを適用 */
+h1 {
+  color: var(--color-pastel-purple-800);
+}
+
+/* 日付に直接スタイルを適用 */
+.text-lg.text-purple-600 {
+ color: var(--color-pastel-purple-600);
+}
+
+/* フォントを適用（優先度を強制的に上げる） */
+body {
+  font-family: cursive !important;
+}
+
+/* 必要に応じて他のグローバルスタイルを追加 */ 
